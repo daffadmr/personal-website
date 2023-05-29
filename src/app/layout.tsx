@@ -5,7 +5,7 @@ import Providers from "@/components/Providers";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Home | Daffa Damar",
+  title: "Daffa Damar",
   description: "Daffa's personal website",
 };
 
