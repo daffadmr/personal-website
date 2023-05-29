@@ -45,9 +45,9 @@ const Navbar = () => {
           >
             <div className="flex flex-col-reverse md:flex-row gap-5 p-2 pb-5 md:p-0">
               <ul className="flex flex-col md:flex-row gap-3 md:items-center">
-                {pages.map((page) => {
+                {pages.map((page, index) => {
                   return (
-                    <li className="inline-block hover:bg-gray-300 dark:hover:bg-slate-600 px-[5px] rounded">
+                    <li key={index} className="inline-block hover:bg-gray-300 dark:hover:bg-slate-600 px-[5px] rounded">
                       <Link className="block" href={page.link} onClick={()=>setShowNav(false)}>
                         {page.name}
                       </Link>
