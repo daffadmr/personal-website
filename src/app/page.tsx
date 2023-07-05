@@ -33,10 +33,10 @@ const page = () => {
         engaging and user-friendly websites, and I am particularly drawn to the
         power and versatility of technologies like React and Svelte.
       </p>
-      <div className="flex flex-col items-center pt-20 gap-5">
+      {/* <div className="flex flex-col items-center pt-20 gap-5">
         <h1>Skills</h1>
         <Skill />
-      </div>
+      </div> */}
     </main>
   );
 };
