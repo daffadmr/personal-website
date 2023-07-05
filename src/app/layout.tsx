@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Daffa Damar",
-  description: "Daffa's personal website",
+  description: "Daffa Damar personal website",
 };
 
 const jakarta = Plus_Jakarta_Sans({
