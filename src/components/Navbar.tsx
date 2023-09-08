@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="py-2 border border-x-0 border-t-0 sticky top-0 bg-white dark:bg-inherit">
+    <header className="py-2 border border-x-0 border-t-0 sticky top-0 bg-white dark:bg-inherit z-30">
       <div className="container">
         <div className="flex justify-between items-center">
           <h2>
