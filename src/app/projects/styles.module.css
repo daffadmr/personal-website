@@ -1,0 +1,15 @@
+.cover {
+  opacity: 0;
+}
+
+.eye {
+  opacity: 0;
+}
+
+.imageAnchor:hover .cover {
+  opacity: 80%;
+}
+
+.imageAnchor:hover .eye {
+  opacity: 80%;
+}
