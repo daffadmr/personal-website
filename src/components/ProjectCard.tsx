@@ -37,7 +37,7 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`card dark:bg-slate-700 max-w-md flex flex-col gap-2 shadow-xl rounded w-full border dark:border-0 transition-all duration-200 ${styles.imageAnchor}`}
+      className={`card dark:bg-slate-700 max-w-md flex flex-col gap-2 shadow-xl rounded w-full dark:border-0 transition-all duration-200 ${styles.imageAnchor}`}
     >
       {isMedium ? (
         image_url !== null ? (
