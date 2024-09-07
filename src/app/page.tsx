@@ -20,16 +20,13 @@ const page = () => {
             <strong>I'm Daffa</strong>
           </div>
           <div>
-            <strong>A Front-End Web Enthusiast</strong>
+            <strong>A Frontend Developer</strong>
           </div>
           <Contact />
         </div>
       </div>
       <p className=" text-justify">
-        My name is Daffa Damar Ardhika, a passionate individual with a strong
-        interest in front-end web development. I find immense joy in creating
-        engaging and user-friendly websites, and I am particularly drawn to the
-        power and versatility of technologies like React and Svelte.
+         My name is Daffa Damar Ardhika, a frontend developer currently focused on Vue.js, with experience in React as well. I enjoy crafting seamless and interactive user experiences and am passionate about using Tailwind CSS for styling and layouting.
       </p>
     </main>
   );
