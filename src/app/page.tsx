@@ -20,7 +20,7 @@ const page = () => {
             <strong>I'm Daffa</strong>
           </div>
           <div>
-            <strong>A Frontend Developer</strong>
+            <strong>a Frontend Developer</strong>
           </div>
           <Contact />
         </div>
