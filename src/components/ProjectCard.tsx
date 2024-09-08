@@ -4,13 +4,17 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "../app/projects/styles.module.css";
 
+interface Tech {
+  name: string;
+  icon: string;
+}
 type ProjectCardProps = {
   image_url: string;
   title: string;
   repository_url: string;
   project_url: string;
   description: string;
-  tech: [{ name: string; icon: string }];
+  tech: Array<Tech>;
 };
 
 const ProjectCard = ({
@@ -51,7 +55,7 @@ const ProjectCard = ({
                   className={`flex gap-2 bg-transparent text-white z-20 px-2 py-1 rounded absolute top-1/2 ${styles.eye}`}
                 >
                   <EyeIcon width={20} />
-                  Click The Image to Visit Live Website
+                  Click the image to visit live website
                 </span>
               </div>
               <Image
