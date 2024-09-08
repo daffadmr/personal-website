@@ -1,5 +1,7 @@
 import supabase from "@/utils/supabase";
 import ProjectCard from "@/components/ProjectCard";
+import { getClient } from "@/configs/apolloClient";
+import { GET_PROJECTS } from "@/graphql/query";
 
 export const metadata = {
   title: "Projects | Daffa Damar",
@@ -8,16 +10,34 @@ export const metadata = {
 
 export const revalidate = 5;
 
+interface Tech {
+  name: string;
+  icon: string;
+}
+
+interface Projects {
+  id: string;
+  description: string;
+  image_url: string;
+  title: string;
+  tech: Array<Tech>;
+  project_url: string;
+  repository_url: string;
+}
+
 export default async function Projects() {
-  const { data } = await supabase.from("project").select();
+  const { data, loading } = await getClient().query({ query: GET_PROJECTS });
+
+  if (loading) return <p>Loading...</p>;
 
   return (
     <main className="container flex">
       <div className="flex flex-col py-12 gap-5 w-full items-center">
         <h1>My Projects</h1>
+        {data.projects.tech}
         <div className="flex gap-12 flex-wrap justify-center">
           {data ? (
-            data?.map(
+            data.projects.map(
               ({
                 id,
                 image_url,
@@ -26,7 +46,7 @@ export default async function Projects() {
                 tech,
                 project_url,
                 repository_url,
-              }) => {
+              }: Projects) => {
                 return (
                   <ProjectCard
                     key={id}
