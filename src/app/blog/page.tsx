@@ -10,7 +10,7 @@ const page = () => {
     <div className="container flex flex-col py-12 w-full items-center h-[85vh] md:h-[90vh] xl:h-[89vh]">
       <div className="flex flex-col items-center justify-between h-1/2">
         <h1>Blog</h1>
-        <h2>Coming soon!</h2>
+        <h2>Blog is not coming! 😛</h2>
       </div>
     </div>
   );
