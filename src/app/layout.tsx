@@ -25,11 +25,12 @@ export default function RootLayout({
       <body
         className={`dark:bg-slate-800 min-h-[100dvh] ${jakarta.className} grid grid-rows-[auto_1fr_auto] min-w-full`}
       >
+        {/* 
         <Providers>
-          <Navbar />
-          {children}
-          <Footer />
-        </Providers>
+          <Navbar /> */}
+        {children}
+        {/* <Footer />
+        </Providers> */}
       </body>
     </html>
   );

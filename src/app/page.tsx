@@ -5,8 +5,8 @@ import GitHubCalendar from "react-github-calendar";
 
 const page = () => {
   return (
-    <main className="container py-12 flex flex-col justify-center items-center md:min-h-[89vh]">
-      <div className="hero pb-6 md:pb-12 flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-12">
+    <main className="container py-12 flex flex-col justify-center items-center min-h-screen text-center">
+      {/* <div className="hero pb-6 md:pb-12 flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-12">
         <Image
           src={"me.jpg"}
           unoptimized={true}
@@ -34,7 +34,21 @@ const page = () => {
       </p>
       <div className="py-12 gap-5 flex flex-col flex-wrap overflow-auto max-w-[80dvw]">
         <GitHubCalendar username="daffadmr" />
-      </div>
+      </div> */}
+      <h1>
+        Follow my new Instagram{" "}
+        <a
+          href="https://instagram.com/dffdmr"
+          target="_blank"
+          className="text-sky-500 hover:opacity-60 transition-all"
+        >
+          @dffdmr
+        </a>
+      </h1>
+      <p className="my-4">
+        My old Instagram account (@daffadmr) was hacked, and I don't have access
+        anymore.
+      </p>
     </main>
   );
 };
